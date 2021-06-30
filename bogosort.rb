@@ -8,6 +8,8 @@ class Array
   end
   
   def bogo_sort
+    
+    # 配列の要素をランダムシャッフルし、繰り返す。
     self.shuffle! until self.in_order?
     self
   end
@@ -16,6 +18,6 @@ end
 
 test_array = []
 
-# ３つの要素を持つランダムな配列を生成
-3.times { test_array << rand(50) }
+# ５つの要素を持つランダムな配列を生成
+5.times { test_array << rand(50) }
 p test_array.bogo_sort
